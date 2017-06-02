@@ -1,7 +1,6 @@
 require './node'
 
 class List
-    attr_accessor :head
 
     def initialize(max_size)
         @max_size = max_size
@@ -9,8 +8,8 @@ class List
 
     def add(val)
         n = Node.new(val)
-        if self.head.nil?
-            self.head = n
+        if @head.nil?
+            @head = n
         else
             cur = @head
             while cur.next_node
