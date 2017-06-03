@@ -11,3 +11,9 @@ l.add 1
 
 
 l.print_list
+l.reverse
+p '-'*30 
+l.print_list
+l.remove(3)
+p '_'*30
+l.print_list
