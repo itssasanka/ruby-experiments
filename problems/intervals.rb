@@ -1,3 +1,9 @@
+# Given a series of intervals (1,8), (2,3), (7, 11)
+# Calculate the total magnitude of all the intervals combined and also
+# the total magnitude between the intervals.
+# Ex: (10,13), (2, 7), (1, 4), (12,15)
+# Total: 6 + 5 = 11
+# Free: (15-1) - 11 = 3 
 def process_intervals(intervals)
     map = {}
     intervals.each do |i|
