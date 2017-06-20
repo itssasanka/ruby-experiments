@@ -1,3 +1,6 @@
+# Print out all permutations of a given string
+# Example : "abc"
+# Output : "abc","acb", "bac", "bca", cab, cba"
 def permutate(string)
     rec_permutate(string, "")
 end
