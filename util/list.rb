@@ -1,4 +1,4 @@
-require './node'
+require './general_node'
 
 class List
 
