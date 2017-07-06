@@ -1,3 +1,5 @@
+# Node for a binary Tree
+# 
 class Node
     attr_accessor :left, :right, :value
 
