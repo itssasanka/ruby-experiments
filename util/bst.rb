@@ -4,7 +4,7 @@
 # search()
 #
 
-require './tree_node'
+require_relative './tree_node.rb'
 
 class BST
     attr_accessor :root
