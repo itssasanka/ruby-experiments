@@ -1,7 +1,13 @@
-class TreeNode
-    attr_accessor :left, :right, :val
+# Node for a binary Tree
+# 
+class Node
+    attr_accessor :left, :right, :value
 
     def initialize(val)
-        self.val = val
+        self.value = val
+    end
+
+    def isleaf?
+        self.left.nil? && self.right.nil?
     end
 end

@@ -1,7 +1,8 @@
-require './node'
+require_relative './general_node'
 
 class List
-
+    attr_accessor :head
+    
     def initialize(max_size)
         @max_size = max_size
         @cur_size = 0

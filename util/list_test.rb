@@ -1,4 +1,4 @@
-require './node'
+require './general_node'
 require './list'
 
 l=List.new 10
