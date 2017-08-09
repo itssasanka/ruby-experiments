@@ -47,11 +47,7 @@ class List
     end
 
     def reverse
-        cur = @head
-        c, new_head = reverse_rec(cur)        
-
-        c.next_node = nil
-        @head = new_head
+        @head = reverse_rec(@head)[1] 
     end
 
     private
@@ -64,6 +60,8 @@ class List
         end
 
         last.next_node = cur
+        cur.next_node = nil
+
         return [cur, new_head]
     end
 
