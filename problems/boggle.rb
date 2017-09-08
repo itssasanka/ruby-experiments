@@ -145,9 +145,7 @@ end
 
 
 
-# board = [%w(p w y r), %w(e n t h), %w(g s i q), %w(o l s a)]
-# dict= %w(hit hits kilts peg pen pep pentagon slit slits stilts)
-board = [['t','i'],['l','l']]
-dict = ['till']
+board = [%w(p w y r), %w(e n t h), %w(g s i q), %w(o l s a)]
+dict= %w(hit hits kilts peg pen pep pentagon slit slits stilts)
 
 findWords(board, dict)
