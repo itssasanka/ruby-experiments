@@ -27,6 +27,29 @@ def deserialize(iterator)
     return parent
 end
 
+def serialize_inorder(node, list)
+    if node.nil?
+        list << nil
+        return
+    end
+
+    serialize_inorder(node.left, list)
+    list << node.value
+    serialize_inorder(node.right, list)
+end
+# [nil, 1, nil, 3, nil, 5, nil, 6, nil, 9, nil, 13, nil]
+
+def deserialize_inorder(list)
+    val = list.shift
+    return nil if val.nil?
+    
+    left = Node.new(val)
+    right = deserialize_inorder(list[1..-1])
+
+
+    
+end
+
 b=BST.new
 b.add(5)
 b.add(6)
@@ -44,3 +67,7 @@ deserialized_root = deserialize(iterator)
 # Verification
 new_list = []; serialize(deserialized_root, new_list)
 puts new_list == list
+
+
+inorder_list = []
+serialize_inorder(b.root, inorder_list)
