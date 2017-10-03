@@ -31,7 +31,7 @@ def one_replaced?(s1, s2)
 
     s1.size.times do |i|
         count += 1 unless s1[i] == s2[i]
-        return false if count != 1
+        return false if count > 1
     end
    return true 
 end
